@@ -27,7 +27,7 @@ search_term = st.text_input('', placeholder='정류소명 검색')
 if search_term:
     filtered_stops = bus_stops[bus_stops['정류소명'].str.startswith(search_term)]
     if len(filtered_stops) == 0:
-        st.write('검색 결과가 없습니다.')
+        st.markdown('<p class="p-result-none">검색 결과가 없습니다.</p>',unsafe_allow_html=True)
     else:
         st.markdown(
             f"""<div class="div-search-row">
@@ -62,4 +62,4 @@ if search_term:
 
 
 else:
-    st.write('검색어를 입력하세요.')
+    st.markdown('<p class="p-search-none">검색어를 입력해주세요.</p>',unsafe_allow_html=True)
