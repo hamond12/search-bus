@@ -9,8 +9,8 @@ streamlit으로 구현
 
 설치해야할 라이브러리 (터미널에 입력)
 ```python
-!pip install streamlit
-!pip install pandas
-!pip install folium
-!pip install streamlit_folium
+pip install streamlit
+pip install pandas
+pip install folium
+pip install streamlit_folium
 ```
