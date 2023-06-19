@@ -47,7 +47,7 @@ if search_term:
 
             # 클릭 이벤트 처리
             button_clicked = st.button(
-                "위치확인", key=f"button_{index}", help=f"{index}번째 데이터")
+                "위치확인", key=f"button_{index}", help=f"{index}번째 정류소")
             if button_clicked:
                 # 클릭한 정류소 위치를 지도에 표시
                 m = folium.Map(location=[row['위도'], row['경도']], zoom_start=14)
@@ -59,7 +59,3 @@ if search_term:
                 folium_static(m)
                 with st.empty():
                     pass
-
-
-else:
-    st.markdown('<p class="p-search-none">검색어를 입력해주세요.</p>',unsafe_allow_html=True)
