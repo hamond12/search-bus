@@ -3,6 +3,24 @@ import pandas as pd
 import folium
 from streamlit_folium import folium_static
 
+
+def add_bg_from_url():
+    st.markdown(
+         f"""
+         <style>
+         .stApp {{
+             background-image: url("https://i.imgur.com/9Z8Im7y.png");
+             background-attachment: fixed;
+             background-size: cover
+             
+         }}
+         </style>
+         """,
+         unsafe_allow_html=True
+     )
+
+add_bg_from_url() 
+
 # css 불러오기
 def local_css(file_name):
     with open(file_name, encoding='utf-8') as f:
@@ -40,7 +58,7 @@ if search_term:
             st.markdown(
                 f"""<div class="div-search-result">
                         <p class="p-search1">{row['정류소명']}</p>
-                        <p class="p-search2">|</p>
+                        <p class="p-search2"></p>
                         <p class="p-search3">{row['위치정보(주변설명)']}</p>
                     </div>
                 """, unsafe_allow_html=True)

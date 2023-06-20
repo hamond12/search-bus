@@ -1,20 +1,40 @@
-@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
 
 * {
-  font-family: "Nanum Gothic";
+  font-family: "Noto Sans KR", sans-serif;
 }
 
-/*제목 중앙정렬*/
+.css-18ni7ap.e13qjvis2 {
+  display: none;
+}
+
+.block-container.css-1y4p8pa.e1g8pov64 {
+  padding-top: 40px;
+}
+
+/*제목*/
 .css-10trblm.eqr7zpz0 {
+  padding-top: -30px;
   text-align: center;
+  color: white;
+  font-weight: 900;
+  text-shadow: 1px 1px 2px black;
+}
+
+/*검색창*/
+.st-bc.st-bx.st-by.st-bz.st-c0.st-c1.st-c2.st-c3.st-c4.st-c5.st-c6.st-b8.st-c7.st-c8.st-c9.st-ca.st-cb.st-cc.st-cd.st-ce.st-ae.st-af.st-ag.st-cf.st-ai.st-aj.st-bw.st-cg.st-ch.st-ci {
+  border: 3px solid black;
 }
 
 /*아무것도 검색하지 않거나 검색결과가 없을 때 나오는 안내문구 위치조정*/
 p {
   text-align: center;
+  font-size: 18px;
 }
 
 .div-search-row {
+  color: white;
+  text-shadow: 1px 1px 2px black;
   display: flex;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -46,15 +66,23 @@ p {
 
 .div-search-result {
   display: flex;
-  border: 1px solid black;
+  color: greenyellow;
+  font-weight: 700x;
+  text-shadow: 1px 1px black;
+  border: none;
   margin: 0;
   margin-bottom: 10px;
   padding: 10px;
   width: 500px;
 }
 
+.div-search-result p {
+  font-size: 18px;
+}
+
 .p-result-none {
   padding-top: 20px;
+  color: white;
 }
 
 .div-search-result p {
@@ -92,9 +120,12 @@ p {
 
 /*버튼*/
 .css-1n543e5.e1ewe7hr10 {
-  font-size: 16px;
   height: 40px;
   width: 140px;
+  border: none;
+  background-color: transparent;
+  color: aqua;
+  text-shadow: 1px 1px black;
 }
 
 /*버튼위치*/
@@ -105,7 +136,8 @@ p {
 
 /*버튼 안 글자*/
 .css-1vbkxwb.eqr7zpz4 p {
-  height: 25px;
+  height: 30px;
+  font-size: 20px;
 }
 
 .p-search-none {
